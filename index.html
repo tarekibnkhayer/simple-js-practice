@@ -9,16 +9,16 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans">
-   <header class="bg-[#F9F6E2] flex ">
-  <div class="grow text-center my-64 "> <p class="text-3xl font-medium mb-6">---SALE FEVER---</p>
-    <h1 class="text-6xl font-bold">Purchase TK 200 or <br>above & get 20% off</h1>
-    <div class="text-2xl font-medium ">Use Promo Code <button class="font-semibold px-6 py-3 text-white bg-pink-400 mt-16">SELL200</button></div></div>
-    <div class="w-[708px]  py-20 "><img src="images/Summer 1.png" alt="" class="w-full"></div>
+   <header class="bg-[#F9F6E2] lg:flex ">
+  <div class="grow text-center pt-12  lg:my-64 "> <p class="text-3xl font-medium mb-6">---SALE FEVER---</p>
+    <h1 class="text-6xl font-bold">Purchase TK 200 or <br>above & get <span class="text-pink-400">20% off</span></h1>
+    <div class="text-2xl font-medium ">Use Promo Code <button class="font-semibold px-6 py-3 text-white bg-pink-400 mt-16 ml-4 rounded-lg">SELL200</button></div></div>
+    <div class="lg:w-[708px] md:w-3/5 mx-auto py-20 "><img src="images/Summer 1.png" alt="" class="w-full"></div>
    </header>
    <main class="max-w-screen-xl mx-auto mt-32">
-    <h2 class="text-4xl font-semibold">Kitchenware</h2>
+    <h2 class="text-4xl font-semibold ml-2">Kitchenware</h2>
     <!-- first section: kitchenware -->
-    <div class="grid grid-cols-4 gap-6 mt-8 ">
+    <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 ">
         <!-- first card -->
         <div class="bg-white p-5 rounded-lg shadow-md text-center border ">
            <div class="bg-[#1111110D] py-8 "> <img src="images/prod1.png" alt="" class="mx-auto"></div>
@@ -61,9 +61,20 @@ K. Accessories</h3>
         </div>
         <!-- coupon and purchase div -->
         <div>
-          <div class="w-[342px] h-[148px] rounded-lg shadow-sm border">
+          <div class="w-[342px] h-[148px] rounded-lg shadow-sm border mx-auto">
             <p class="text-2xl font-medium text-center mt-3">Have Coupon?</p> <br>
            <input type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 "> <button class="disabled: px-5 py-4 text-white text-xl font-semibold rounded-lg bg-pink-400 w-[100px]">Apply</button>
+          </div>
+          <div class="mt-6 rounded-lg shadow border">
+            <textarea name="" id="" cols="40" rows="10"></textarea>
+            <hr class="mb-3 w-5/6 mx-auto">
+            <div class="text-center">
+              <p class="text-2xl font-medium leading-10">Total Price: <span class="text-[#0b0b0b80]">00TK</span></p>
+              <p class="text-2xl font-medium leading-10">Discount: <span class="text-[#0b0b0b80]">00TK</span></p>
+              <p class="text-2xl font-medium leading-10">Total: <span class="text-[#0b0b0b80]">00TK</span></p>
+            </div>
+            <hr class="mb-3 w-5/6 mx-auto"> 
+            <div class="flex justify-center"><button class=" bg-pink-400">Make Purchase</button></div>
           </div>
         </div>
     </div>
