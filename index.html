@@ -29,20 +29,20 @@
     <h2 class="text-4xl font-semibold ml-2">Kitchenware</h2>
     <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 ">
         <!-- first card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+        <div id="firstCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
            <div class="bg-[#1111110D] py-8 "> <img src="images/prod1.png" alt="" class="mx-auto"></div>
             <div class="rating my-6">
-                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
-                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked/>
-                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" checked/>
+                <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <h3 class="mb-2 text-xl font-semibold">K. Accessories</h3>
-              <p class="text-[#11111180] text-xl font-normal">39.00 TK</p>
+              <h3 id="productName1" class="mb-2 text-xl font-semibold">K. Accessories</h3>
+              <p class="text-[#11111180] text-xl font-normal"><span id="price1">39.00</span> TK</p>
         </div>
         <!-- second card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+        <div id="secondCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
            <div class="bg-[#1111110D] py-8"> <img src="images/prod2.png" alt="" class="mx-auto" ></div>
             <div class="rating my-6">
                 <input type="radio"  class="mask mask-star-2 bg-orange-100" />
@@ -51,31 +51,30 @@
                 <input type="radio" class="mask mask-star-2  bg-orange-100" />
                 <input type="radio" class="mask mask-star-2  bg-orange-100" />
               </div>
-              <h3 class="mb-2 text-xl font-semibold">K. Accessories</h3>
+              <h3 id="productName2" class="mb-2 text-xl font-semibold">K. Slicer</h3>
               <p class="text-[#11111180] text-xl font-normal">25.00 TK</p>
         </div>
         <!-- third card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+        <div id="thirdCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
            <div class="bg-[#1111110D] py-8"> <img src="images/prod3.png" alt="" class="mx-auto" ></div>
             <div class="rating my-6">
-                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
-                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <h3 class="mb-2 text-xl font-semibold">
-K. Accessories</h3>
+              <h3 id="productName3" class="mb-2 text-xl font-semibold">Home Cooker</h3>
               <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
         </div>
         <!-- coupon and purchase div -->
         <div >
           <div class="w-[342px] h-[148px] rounded-lg shadow-sm border mx-auto">
             <p class="text-2xl font-medium text-center mt-3">Have Coupon?</p> <br>
-           <input type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 "> <button class="button-2nd w-[100px] :" disabled>Apply</button>
+           <input type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 text-black"> <button class="button-2nd w-[100px] :" disabled>Apply</button>
           </div>
           <div class="mt-6 rounded-lg shadow border">
-            <textarea name="" id="" cols="40" rows="10"></textarea>
+           <div id="listContainer"   class="bg-white text-2xl pl-6 pt-6 font-medium h-96"></div>
             <hr class="mb-3 w-5/6 mx-auto">
             <div class="text-center">
               <p class="text-2xl font-medium leading-10">Total Price: <span class="text-[#0b0b0b80]">00TK</span></p>
@@ -88,11 +87,11 @@ K. Accessories</h3>
         </div>
     </div>
     <!-- second section: Sportswear -->
-   <div class="relative lg:-top-60 mt-8">
+   <div class="relative lg:-top-96 mt-8">
     <h2 class="text-4xl font-semibold ml-2">Sportswear</h2>
     <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-    <!-- first card -->
-    <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+    <!-- fourth card -->
+    <div id="fourthCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
        <div class="bg-[#1111110D] py-8 "> <img src="images/prod4.png" alt="" class="mx-auto"></div>
         <div class="rating my-6">
             <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
@@ -101,11 +100,11 @@ K. Accessories</h3>
             <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
             <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
           </div>
-          <h3 class="mb-2 text-xl font-semibold">Sports Back Cap</h3>
+          <h3 id="productName4" class="mb-2 text-xl font-semibold">Sports Back Cap</h3>
           <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
     </div>
-    <!-- second card -->
-    <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+    <!-- fifth card -->
+    <div id="fifthCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
        <div class="bg-[#1111110D] py-8"> <img src="images/prod5.png" alt="" class="mx-auto" ></div>
         <div class="rating my-6">
             <input type="radio"  class="mask mask-star-2 bg-orange-400" />
@@ -114,11 +113,11 @@ K. Accessories</h3>
             <input type="radio" class="mask mask-star-2  bg-orange-400" checked />
             <input type="radio" class="mask mask-star-2  bg-orange-400" />
           </div>
-          <h3 class="mb-2 text-xl font-semibold">Full Jersey Set</h3>
+          <h3 id="productName5" class="mb-2 text-xl font-semibold">Full Jersey Set</h3>
           <p class="text-[#11111180] text-xl font-normal">69.00 TK</p>
     </div>
-    <!-- third card -->
-    <div class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
+    <!-- sixth card -->
+    <div id="sixthCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
        <div class="bg-[#1111110D] py-8"> <img src="images/prod6.png" alt="" class="mx-auto" ></div>
         <div class="rating my-6">
             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
@@ -127,9 +126,11 @@ K. Accessories</h3>
             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
           </div>
-          <h3 class="mb-2 text-xl font-semibold">Sports cates</h3>
+          <h3 id="productName6" class="mb-2 text-xl font-semibold">Sports cates</h3>
           <p class="text-[#11111180] text-xl font-normal">159.00 TK</p>
     </div></div>
    </main>
+   <script src="js/utilities.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
