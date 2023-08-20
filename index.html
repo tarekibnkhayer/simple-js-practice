@@ -20,7 +20,7 @@
     <!-- first section: kitchenware -->
     <div class="grid grid-cols-4 gap-6 mt-8 ">
         <!-- first card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center ">
+        <div class="bg-white p-5 rounded-lg shadow-md text-center border ">
            <div class="bg-[#1111110D] py-8 "> <img src="images/prod1.png" alt="" class="mx-auto"></div>
             <div class="rating my-6">
                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
@@ -33,7 +33,7 @@
               <p class="text-[#11111180] text-xl font-normal">39.00 TK</p>
         </div>
         <!-- second card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center ">
+        <div class="bg-white p-5 rounded-lg shadow-md text-center border ">
            <div class="bg-[#1111110D] py-8"> <img src="images/prod2.png" alt="" class="mx-auto" ></div>
             <div class="rating my-6">
                 <input type="radio"  class="mask mask-star-2 bg-orange-100" />
@@ -46,7 +46,7 @@
               <p class="text-[#11111180] text-xl font-normal">25.00 TK</p>
         </div>
         <!-- third card -->
-        <div class="bg-white p-5 rounded-lg shadow-md text-center ">
+        <div class="bg-white p-5 rounded-lg shadow-md text-center border">
            <div class="bg-[#1111110D] py-8"> <img src="images/prod3.png" alt="" class="mx-auto" ></div>
             <div class="rating my-6">
                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
@@ -55,12 +55,16 @@
                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <h3 class="mb-2 text-xl font-semibold">K. Accessories</h3>
+              <h3 class="mb-2 text-xl font-semibold">
+K. Accessories</h3>
               <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
         </div>
         <!-- coupon and purchase div -->
         <div>
-          <div></div>
+          <div class="w-[342px] h-[148px] rounded-lg shadow-sm border">
+            <p class="text-2xl font-medium text-center mt-3">Have Coupon?</p> <br>
+           <input type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 "> <button class="disabled: px-5 py-4 text-white text-xl font-semibold rounded-lg bg-pink-400 w-[100px]">Apply</button>
+          </div>
         </div>
     </div>
    </main>
