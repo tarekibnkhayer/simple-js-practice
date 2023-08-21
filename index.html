@@ -52,7 +52,7 @@
                 <input type="radio" class="mask mask-star-2  bg-orange-100" />
               </div>
               <h3 id="productName2" class="mb-2 text-xl font-semibold">K. Slicer</h3>
-              <p class="text-[#11111180] text-xl font-normal">25.00 TK</p>
+              <p class="text-[#11111180] text-xl font-normal"><span id="price2">25.00</span>TK</p>
         </div>
         <!-- third card -->
         <div id="thirdCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
@@ -65,21 +65,21 @@
                 <input type="radio" name="rate" class="mask mask-star-2 bg-orange-400" />
               </div>
               <h3 id="productName3" class="mb-2 text-xl font-semibold">Home Cooker</h3>
-              <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
+              <p class="text-[#11111180] text-xl font-normal"><span id="price3">45.00</span> TK</p>
         </div>
         <!-- coupon and purchase div -->
         <div >
           <div class="w-[342px] h-[148px] rounded-lg shadow-sm border mx-auto">
             <p class="text-2xl font-medium text-center mt-3">Have Coupon?</p> <br>
-           <input type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 text-black"> <button class="button-2nd w-[100px] :" disabled>Apply</button>
+           <input id="couponCode" type="text" placeholder="Coupon code" class="h-14 border border-solid border-[#11111126] mt-1 ml-6 mb-6 pl-4 text-black"> <button id="applyButton" class="button-2nd w-[100px] :" disabled>Apply</button>
           </div>
           <div class="mt-6 rounded-lg shadow border">
            <div id="listContainer"   class="bg-white text-2xl pl-6 pt-6 font-medium h-96"></div>
             <hr class="mb-3 w-5/6 mx-auto">
             <div class="text-center">
-              <p class="text-2xl font-medium leading-10">Total Price: <span class="text-[#0b0b0b80]">00TK</span></p>
-              <p class="text-2xl font-medium leading-10">Discount: <span class="text-[#0b0b0b80]">00TK</span></p>
-              <p class="text-2xl font-medium leading-10">Total: <span class="text-[#0b0b0b80]">00TK</span></p>
+              <p class="text-2xl font-medium leading-10">Total Price: <span class="text-[#0b0b0b80]"><span id="totalPriceAmount">00</span>TK</span></p>
+              <p class="text-2xl font-medium leading-10">Discount: <span class="text-[#0b0b0b80]"><span id="discount">00</span>TK</span></p>
+              <p class="text-2xl font-medium leading-10">Total: <span class="text-[#0b0b0b80]"><span id="total">00</span>TK</span></p>
             </div>
             <hr class="w-5/6 my-6 mx-auto"> 
             <div class="flex justify-center"><button class="button-2nd relative -bottom-3 w-64 " disabled>Make Purchase</button></div>
@@ -101,7 +101,7 @@
             <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
           </div>
           <h3 id="productName4" class="mb-2 text-xl font-semibold">Sports Back Cap</h3>
-          <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
+          <p class="text-[#11111180] text-xl font-normal"><span id="price4">49.00</span> TK</p>
     </div>
     <!-- fifth card -->
     <div id="fifthCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
@@ -114,7 +114,7 @@
             <input type="radio" class="mask mask-star-2  bg-orange-400" />
           </div>
           <h3 id="productName5" class="mb-2 text-xl font-semibold">Full Jersey Set</h3>
-          <p class="text-[#11111180] text-xl font-normal">69.00 TK</p>
+          <p class="text-[#11111180] text-xl font-normal"><span id="price5">69.00</span> TK</p>
     </div>
     <!-- sixth card -->
     <div id="sixthCard" class="bg-white p-5 rounded-lg shadow-md text-center border h-[380px]">
@@ -127,7 +127,7 @@
             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
           </div>
           <h3 id="productName6" class="mb-2 text-xl font-semibold">Sports cates</h3>
-          <p class="text-[#11111180] text-xl font-normal">159.00 TK</p>
+          <p class="text-[#11111180] text-xl font-normal"><span id="price6">159.00</span> TK</p>
     </div></div>
    </main>
    <script src="js/utilities.js"></script>
