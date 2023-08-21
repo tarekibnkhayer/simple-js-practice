@@ -16,7 +16,6 @@ document.getElementById("secondCard").addEventListener("click", function(){
     setTotal(totalPriceAmount);
 })
 document.getElementById("thirdCard").addEventListener("click", function(){
-    console.log("fld")
     const productName = document.getElementById("productName3").innerText;
     setTextInListContainer(productName);
     const price = convertPriceStringIntoANumber("price3");
@@ -25,7 +24,6 @@ document.getElementById("thirdCard").addEventListener("click", function(){
     setTotal(totalPriceAmount);
 })
 document.getElementById("fourthCard").addEventListener("click", function(){
-    console.log("sld")
     const productName = document.getElementById("productName4").innerText;
     setTextInListContainer(productName);
     const price = convertPriceStringIntoANumber("price4");
